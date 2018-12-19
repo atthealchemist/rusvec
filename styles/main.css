@@ -1,5 +1,5 @@
 @import url("reset.css");
-@import url('https://fonts.googleapis.com/css?family=PT+Sans|Podkova');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Podkova|Play');
 @import url("responsive.css");
 
 #map {
@@ -54,19 +54,19 @@
     text-align: center;
     background-color: #4b5161;
     color: #eee;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Play', sans-serif;
 }
 
 .contact-line {
     font-size: 1vw;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Play', sans-serif;
     font-weight: normal;
     line-height: 1.5;
 }
 
 .section-title {
     font-size: 1vw;
-    font-family: 'PT Sans', serif;
+    font-family: 'Play', serif;
     font-weight: 300;
 }
 
@@ -79,7 +79,7 @@
 
 .section-header {
     font-size: 1.5vw;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Play', sans-serif;
     font-weight: normal;
     line-height: 4;
 }
@@ -93,7 +93,7 @@
 
 .product-header h1,
 .product-profit h1 {
-    font-family: "PT Sans", sans-serif;
+    font-family: "Play", sans-serif;
     padding: 1em 0;
 }
 
