@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <title>Rusvector Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <nav class="level">
+            <div class="level-item">
+                <div class="contacts-moscow">
+                    <span class="contact-line"><a href="tel:849589231313">+7 (495) 892 13 13</a><br>Москва</span>
+                </div>
+            </div>
+            <div class="level-item">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="Rusvector logo">
+                </div>
+            </div>
+            <div class="level-item">
+                <div class="contacts-spb">
+                    <span class="contact-line"><a href="tel:881289231313">+7 (812) 892 13 13</a><br>Санкт-Петербург</span>
+                </div>
+            </div>
+            <!-- <div class="level-right">
+                        <div class="contacts sticker-white">
+                            <div class="contacts-moscow">
+                                <span><a href="tel:849589231313">+7 (495) 892 13 13</a> Москва</span>
+                            </div>
+                            
+                        </div>
+                    </div> -->
+        </nav>
+    </header>
+    <main>
+        <section class="section development">
+            <div class="container sticker-white section-title">
+                Разработка специальных технических условий пожарной безопасности (СТУ)
+                с согласованием в органах МЧС России и в Минстрой России
+                по территориальному признаку &ndash; <span class="sticker">950.000 рублей.</span>
+            </div>
+        </section>
+        <section class="section chart">
+            <div class="section-header">Наши достижения</div>
+            <div class="chart-container">
+                <canvas id="chart"></canvas>
+            </div>
+        </section>
+        <section class="section examples">
+            <div class="section-header">Примеры наших работ</div>
+
+            <div class="container ">
+                <div class="products">
+                    <div class="carousel" data-flickity='{ "autoPlay": true, "prevNextButtons": false, "pageDots": false }'>
+                        <div class="carousel-cell">
+                            <div class="product">
+                                <div class="product-header">
+                                    <h1>Складской комплекс по адресу: <a href="#">Московская обл., с/п Стрелковское</a></h1>
+                                </div>
+                                <div class="product-images">
+                                    <img src="http://project-stu.com/img/carusel/saint_1.jpg" alt="">
+                                    <img src="http://project-stu.com/img/carusel/saint_2.jpg" alt="">
+                                </div>
+                                <div class="product-profit">
+                                    <h1>Экономия составила: <span class="sticker">21 млн. руб.</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section clients">
+            <div class="section-header">Наши клиенты</div>
+            <div class="columns is-variable is-8-desktop">
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/eb.png"> </div>
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/nv.png">
+                </div class="column">
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/pa.png">
+                </div class="column">
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/x5.png">
+                </div>
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/dx.png">
+                </div>
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/gf.png">
+                </div>
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/ms.png">
+                </div>
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/ks.png">
+                </div>
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/sa.png">
+                </div>
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/bo.png">
+                </div>
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/ck.png">
+                </div>
+                <div class="column">
+                    <img src="http://project-stu.com/img/logos/mw.png">
+                </div>
+            </div>
+        </section>
+        <section class="section branches">
+            <div class="section-header">Карта наших офисов</div>
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3>&copy; @th 2018.</h3>
+    </footer>
+</body>
+<script>
+    var myChart = new Chart(document.getElementById("chart"), {
+        type: 'line',
+        data: {
+            labels: ["2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
+            datasets: [{
+                label: 'Объём продаж (тыс.)',
+                data: [654, 656, 701, 693, 744, 805, 756, 1011],
+                backgroundColor: [
+                    'rgba(54, 162, 235, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(54, 162, 235, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            },
+            responsive: true,
+            maintainAspectRatio: false
+        }
+    });
+
+    var map = L.map('map').setView([51.505, -0.09], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([51.5, -0.09]).addTo(map)
+        .bindPopup(
+            'Наш адрес в Москве:<br> <strong>Москва, ул. Академика Сахарова, д. 22, корп. 1</strong><br> Телефон: <a href="tel:84953938373">8 (495) 393-83-73</a>'
+        )
+        .openPopup();
+
+    L.marker([52.5, -0.19]).addTo(map)
+        .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+        .openPopup();
+
+    L.marker([53.5, 0.09]).addTo(map)
+        .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+        .openPopup();
+
+    var carousels = bulmaCarousel.attach();
+    CarouselInstance.on('carousel:ready', function (item) {});
+</script>
+
+</html>
