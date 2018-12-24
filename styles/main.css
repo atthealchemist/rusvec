@@ -1,6 +1,7 @@
 @import url("reset.css");
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|Podkova|Play');
 @import url("responsive.css");
+@import url("anim.css");
 
 #map {
     width: 1200px;
