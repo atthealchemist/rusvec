@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Play|Roboto');
+
+#map {
+    width: 1200px;
+    height: 600px;
+}
+
+#chart {
+    width: 1200px;
+    height: 600px;
+}
+
+.map-container {
+    overflow-y: hidden;
+    display: flex;
+}
+
+.contacts {
+    line-height: 2.5;
+}
+
+.logo {
+    margin: 1em;
+}
+
+.sticker {
+    padding: 6px;
+    background-color: #02a0e333;
+    color: black;
+}
+
+.section {
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    text-align: center;
+}
+
+.footer {
+    height: 10vh;
+    display: grid;
+    place-items: center center;
+    text-align: center;
+    background-color: #4b5161;
+    color: #eee;
+    font-family: 'Play', sans-serif;
+}
+
+.contact-line {
+    font-size: 2vh;
+    font-family: 'Play', sans-serif;
+    font-weight: normal;
+    line-height: 1.75;
+}
+
+.section-title {
+    font-size: 2.5vh;
+    font-family: 'Play', serif;
+    font-weight: 300;
+}
+
+.section-header::before,
+.section-header::after {
+    margin-left: 10px;
+    margin-right: 10px;
+    content: '○';
+}
+
+.section-header {
+    font-size: 2.5vh;
+    font-family: 'Play', sans-serif;
+    font-weight: normal;
+    line-height: 4;
+}
+
+.product {
+    display: flex;
+}
+
+.product-header {
+    position: relative;
+    top: 3em;
+    z-index: 10;
+    background-color: #ffffffee;
+}
+
+.product-header h1,
+.product-profit h1 {
+    font-family: "Play", sans-serif;
+    padding: 1em 0;
+}
+
+.product-profit {
+    position: relative;
+    bottom: 3em;
+    z-index: 10;
+    background-color: #ffffffee;
+}
+
+.img {
+    display: block;
+    min-width: 100%;
+    height: 200px;
+}
+
+.development {
+    background-image: url("../assets/images/construction.jpg");
+    background-blend-mode: screen;
+    background-size: cover;
+}
+
+.sticker-white {
+    line-height: 2;
+    background-color: #ffffffdd;
+    padding: 1em;
+}
+
+.details {
+    width: 300px;
+    position: relative;
+    bottom: 360px;
+    left: 10px;
+    text-align: left;
+}
+
+.details-item {
+    font-family: 'Play', sans-serif;
+    text-transform: uppercase;
+    line-height: 2;
+    font-size: 2.5vh;
+    width: 30vmin;
+    background: rgba(0, 0, 0, .025);
+    margin: 4px 0;
+}
+
+.details-item-value {
+    color: mediumseagreen;
+    font-weight: bold;
+}
+
+.footer {
+    font-size: 2em;
+}
+
+.footer a {
+    color: #eee;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    opacity: 0.30;
+}
+
+.feedback-fab {
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    width: 100px;
+    height: 100px;
+    background: deepskyblue;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.feedback-fab i {
+    color: white;
+}
+
+label, p {
+    font-family: 'Play', sans-serif;
+    font-weight: 300;
+}
+
+.clients-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-column-gap: 100px;
+    height: 300px;
+    
+}
+
+.products-container {
+    display: flex;
+}

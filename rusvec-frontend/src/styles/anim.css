@@ -1,0 +1,38 @@
+
+@keyframes blinking {
+    0% {
+        background-position: 0% 0%;
+    }
+    20% {
+        background-position: 0% 0%;
+    }
+    40% {
+        background-position: 0% 0%;
+    }
+    80% {
+        background-position: 130% 0%;
+    }
+    100% {
+        background-position: 130% 0%;
+    }
+}
+
+.blink::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15%;
+    right: 0;
+    width: 500px;
+    height: 140px;
+    background: linear-gradient(to left, rgba(255,255,255,.0), rgba(255,255,255,.8), rgba(255,255,255,.0)) no-repeat -2em 0%;
+    background-size: 4em 100%;
+    -moz-transform: skewX(-50deg);
+    -o-transform: skewX(-50deg);
+    -webkit-transform: skewX(-50deg);
+    transform: skewX(-50deg);
+    animation-name: blinking;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}

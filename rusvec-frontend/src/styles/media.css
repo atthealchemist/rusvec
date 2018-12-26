@@ -1,0 +1,19 @@
+@media (max-width: 700px) {
+
+    .contacts {
+        height: 100px;
+    }
+
+    .feedback-fab {
+        width: 90px;
+        height: 90px;
+    }
+
+    .clients-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(auto-fill, auto);
+        height: 1000px;
+    }
+
+}

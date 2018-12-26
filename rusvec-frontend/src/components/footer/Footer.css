@@ -1,0 +1,12 @@
+.footer {
+    font-size: 2em;
+}
+
+.footer a {
+    color: #eee;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    opacity: 0.30;
+}
